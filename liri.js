@@ -4,6 +4,8 @@ var keys = require('./keys.js');
 var Spotify = require('node-spotify-api');
 var axios = require('axios');
 var yelp = require('yelp-fusion');
+var fs = require('fs');
+
 var spotify = new Spotify(keys.spotify);
 // console.log(keys.spotify)
 
@@ -60,10 +62,23 @@ if (app == 'movie') {
         }).catch(err => {
             console.log(err);
         });
-}
+} else if (app == 'do-what-it-says') {
+    fs.readFile('./random.txt', 'utf8', function (err, data) {
+        if (err) return console.log(err);
+
+        var dataSplit = data.split(',');
+        var dataNew = dataSplit.map(function (el) {
+            return el.trim();
+        });
+
+        dataNew.forEach(function (item, index, arr) {
+            console.log(item);
+        });
+
+    });
+};
 
 //FS READ WRITE
-// var fs = require('fs');
 
 // takes in name of file to write to
 // fs.writeFile('litfam.txt', 'fam its lit, star war, star trek', function (err) {
@@ -72,15 +87,4 @@ if (app == 'movie') {
 // });
 
 // 
-// fs.readFile('./best_things_ever.txt', 'utf8', function (err, data) {
-//     if (err) return console.log(err);
-//     // split string into array
-//     var dataSplit = data.split(',');
-//     var dataNew = dataSplit.map(function (el) {
-//         return el.trim();
-//     })
 
-//     console.log(dataNew);
-
-//     data.forEach(item)
-// })
