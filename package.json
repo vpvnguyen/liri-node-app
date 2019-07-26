@@ -20,7 +20,6 @@
   "dependencies": {
     "axios": "^0.19.0",
     "dotenv": "^8.0.0",
-    "moment": "^2.24.0",
     "node-spotify-api": "^1.1.1",
     "yelp-fusion": "^3.0.0"
   }
