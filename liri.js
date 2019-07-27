@@ -10,9 +10,9 @@ var spotify = new Spotify(keys.spotify);
 // console.log(keys.spotify)
 
 // argument
-var app = process.argv[2]
+var app = process.argv[2];
 var args = process.argv.slice(3);
-console.log(app, args)
+console.log(app, args);
 
 // [node] [liri] [api] [search]
 if (app == 'movie') {
@@ -28,7 +28,7 @@ if (app == 'movie') {
         }).catch(function (error) {
             console.log(error);
         });
-    console.log(keys.OMDB_KEY)
+    console.log(keys.OMDB_KEY);
 } else if (app == 'spotify') {
     spotify.search(
         {
@@ -41,7 +41,7 @@ if (app == 'movie') {
                 return;
             }
             var songs = data.tracks.items;
-            console.log(songs)
+            console.log(songs);
         }
     )
 } else if (app == 'yelp') {
@@ -50,7 +50,7 @@ if (app == 'movie') {
         location: process.argv[4]
     };
 
-    var apiKey = YELP_KEY;
+    var apiKey = keys.YELP_KEY;
 
     var client = yelp.client(apiKey);
 
