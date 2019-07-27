@@ -6,3 +6,5 @@ exports.spotify = {
 };
 
 exports.OMDB_KEY = process.env.OMDB_ID;
+
+exports.YELP_KEY = process.env.YELP_ID;
