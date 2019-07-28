@@ -15,10 +15,10 @@ var isSearchEmpty;
 
 function omdb(args) {
     if (isSearchEmpty === false) {
-        console.log('OMDB ARGHS IS EMPTY - SETTING TO DEFAULT')
-        args = 'Mr. Nobody'
+        console.log('OMDB ARGHS IS EMPTY - SETTING TO DEFAULT');
+        args = 'Mr. Nobody';
     }
-    console.log(`SEARCHING FOR: ${args}`)
+    console.log(`SEARCHING FOR: ${args}`);
     // Then run a request with axios to the OMDB API with the movie specified
     var queryUrl = `http://www.omdbapi.com/?t=${args}&y=&plot=short&apikey=${keys.OMDB_KEY}`;
 
@@ -48,7 +48,7 @@ function omdb(args) {
 
             //   * Actors in the movie.
             console.log(`Actors: ${response.data.Actors}`);
-            console.log('\n')
+            console.log('\n');
 
         }).catch(function (error) {
             console.log(error);
@@ -57,8 +57,8 @@ function omdb(args) {
 
 function runSpotify(args) {
     if (isSearchEmpty === false) {
-        console.log('SPOT ARGS IS EMPTY - Looking up "I want it that way"')
-        args = ['i', 'want', 'it', 'that', 'way']
+        console.log('Looking up "I want it that way"');
+        args = ['i', 'want', 'it', 'that', 'way'];
     }
     spotify.search(
         {
@@ -75,24 +75,21 @@ function runSpotify(args) {
             // console.log(data);
 
             // Artist name
-            console.log(`Artist's name: ${JSON.stringify(songs[0].artists[0].name, null, 2)}`)
+            console.log(`Artist's name: ${JSON.stringify(songs[0].artists[0].name, null, 2)}`);
             // The song's name name
-            console.log(`Song's name: ${JSON.stringify(songs[0].name, null, 2)}`)
+            console.log(`Song's name: ${JSON.stringify(songs[0].name, null, 2)}`);
 
             // A preview link of the song from Spotify - preview_url
-            console.log(`Preview url: ${JSON.stringify(songs[0].preview_url, null, 2)}`)
+            console.log(`Preview url: ${JSON.stringify(songs[0].preview_url, null, 2)}`);
 
             // The album that the song is from - album.name
-            console.log(`Album: ${JSON.stringify(songs[0].album.name, null, 2)}`)
-            console.log('\n')
+            console.log(`Album: ${JSON.stringify(songs[0].album.name, null, 2)}`);
+            console.log('\n');
         }
     )
 };
 
 function runYelp(args) {
-    if (isSearchEmpty === false) {
-        console.log('YELP ARGS IS EMPTY')
-    }
     var searchRequest = {
         term: process.argv[3],
         location: process.argv[4]
@@ -107,19 +104,19 @@ function runYelp(args) {
             var firstResult = response.jsonBody.businesses[0];
             // var prettyJson = JSON.stringify(firstResult, null, 4);
             // console.log(prettyJson);
-            console.log(`Name: ${firstResult.name}`)
-            console.log(`Is it closed?: ${firstResult.is_closed}`)
-            console.log(`Rating: ${firstResult.rating}`)
-            console.log(`Price: ${firstResult.price}`)
-            console.log(`Location: ${firstResult.location.address1}`)
-            console.log(`${firstResult.location.city}`)
-            console.log(`${firstResult.location.zip_code}`)
-            console.log(`${firstResult.location.state}`)
-            console.log('\n')
+            console.log(`Name: ${firstResult.name}`);
+            console.log(`Is it closed?: ${firstResult.is_closed}`);
+            console.log(`Rating: ${firstResult.rating}`);
+            console.log(`Price: ${firstResult.price}`);
+            console.log(`Location: ${firstResult.location.address1}`);
+            console.log(`${firstResult.location.city}`);
+            console.log(`${firstResult.location.zip_code}`);
+            console.log(`${firstResult.location.state}`);
+            console.log('\n');
 
         }).catch(err => {
             // console.log(err);
-            console.log('Try: [node] [liri] [yelp] [starbucks] [irvine]')
+            console.log('Try: [node] [liri] [yelp] [name] [city]');
         });
 };
 
@@ -128,8 +125,7 @@ function doWhatItSays() {
         if (err) return console.log(err);
 
         var dataSplit = data.split(',');
-        // console.log(dataSplit)
-        application(dataSplit[0], dataSplit[1]);
+        runApplication(dataSplit[0], dataSplit[1]);
     });
 };
 
@@ -141,9 +137,7 @@ function isArgsEmpty(args) {
     }
 }
 
-
-
-function application(app, args) {
+function runApplication(app, args) {
     if (app === undefined) {
         console.log('TRY: [node] [liri] [movie-this/spotify-this-song/yelp] [search]')
     } else if (app === 'movie-this') {
@@ -157,8 +151,8 @@ function application(app, args) {
     }
 }
 
-isArgsEmpty(args)
-application(app, args)
+isArgsEmpty(args);
+runApplication(app, args);
 
 
 
