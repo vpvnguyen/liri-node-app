@@ -13,16 +13,57 @@ var spotify = new Spotify(keys.spotify);
 var app = process.argv[2];
 var args = process.argv.slice(3);
 
-function userInput(app, args) {
-    console.log(`USER INPUT: ${app} | ${args}`)
-    // check if user input 
-    if (app === '') {
-        console.log('there are arguments')
+function isAppEmpty(app) {
+    if (app === undefined) {
+        console.log('TRY: [node] [liri] [movie/spotify/yelp] [search]')
     } else {
-        console.log('no arguments')
+        return app;
     }
 }
-userInput(app, args);
+
+function isArgsEmpty(args) {
+    if (args.length === 0) {
+        console.log('ARGS IS EMPTY')
+    } else {
+        return args;
+    }
+}
+isAppEmpty(app);
+isArgsEmpty(args);
+
+
+// function isEmpty(args) {
+//     for (var key in app, keys) {
+//         if (app.hasOwnProperty(key))
+//             return false;
+//     }
+//     return true;
+// }
+
+// function userInput(app, args) {
+//     console.log(`USER INPUT: ${app} | ${args}`)
+//     // check if user input 
+//     if (app === 'movie') {
+//         console.log(`APPLICATION: ${app}`)
+//         omdb();
+
+//     } else if (app === 'spotify') {
+//         console.log(`APPLICATION: ${app}`)
+//     } else if (app === 'yelp') {
+//         console.log(`APPLICATION: ${app}`)
+//     }
+// }
+// userInput(app, args);
+
+
+function omdb(app, args) {
+    console.log('OMDB()')
+    if (args === '') {
+        console.log('empty')
+    }
+}
+
+
 // [node] [liri] [api] [search]
 if (app == 'movie') {
     // Then run a request with axios to the OMDB API with the movie specified
