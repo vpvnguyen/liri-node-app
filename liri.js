@@ -38,6 +38,18 @@ function runOMDB(args) {
             console.log(`Actors: ${response.data.Actors}`);
             console.log('\n');
 
+            fs.appendFileSync('log.txt', `\n`);
+            fs.appendFileSync('log.txt', `Artist's name: ${response.data.Title}\n`);
+            fs.appendFileSync('log.txt', `Year: ${response.data.Year}\n`);
+            fs.appendFileSync('log.txt', `IMDB Rating: ${response.data.imdbRating}\n`);
+            fs.appendFileSync('log.txt', `Rotten Tomatoes Rating: ${response.data.Ratings[1].Value}\n`);
+            fs.appendFileSync('log.txt', `Country: ${response.data.Country}\n`);
+            fs.appendFileSync('log.txt', `Language: ${response.data.Language}\n`);
+            fs.appendFileSync('log.txt', `Plot: ${response.data.Plot}\n`);
+            fs.appendFileSync('log.txt', `Actors: ${response.data.Actors}\n`);
+            fs.appendFileSync('log.txt', `\n`);
+
+
         }).catch(function (error) {
             console.log(error);
             console.log('Try: [node] [liri] [spotify] [song name]');
@@ -48,27 +60,38 @@ function runOMDB(args) {
 function runSpotify(args) {
     if (isSearchEmpty === false) {
         // if search is empty, set default
-        args = 'i want it that way';
+        args = 'the sign';
     }
     spotify.search(
         {
             type: 'track',
             query: args,
-            limit: 1
+            limit: 5
         },
         function (err, data) {
             if (err) {
+                console.log(err)
                 console.log('Try: [node] [liri] [spotify] [song name]');
                 return;
             }
             var songs = data.tracks.items;
 
-            // log artist, song, preview link, album
-            console.log(`Artist's name: ${JSON.stringify(songs[0].artists[0].name, null, 2)}`);
-            console.log(`Song's name: ${JSON.stringify(songs[0].name, null, 2)}`);
-            console.log(`Preview url: ${JSON.stringify(songs[0].preview_url, null, 2)}`);
-            console.log(`Album: ${JSON.stringify(songs[0].album.name, null, 2)}`);
-            console.log('\n');
+            for (var i = 0; i < songs.length; i++) {
+                // log artist, song, preview link, album
+                console.log(`Artist's name: ${JSON.stringify(songs[i].artists[0].name, null, 2)}`);
+                console.log(`Song's name: ${JSON.stringify(songs[i].name, null, 2)}`);
+                console.log(`Preview url: ${JSON.stringify(songs[i].preview_url, null, 2)}`);
+                console.log(`Album: ${JSON.stringify(songs[i].album.name, null, 2)}`);
+                console.log('\n');
+
+                fs.appendFileSync('log.txt', '\n');
+                fs.appendFileSync('log.txt', `Artist's name: ${songs[i].artists[0].name}\n`);
+                fs.appendFileSync('log.txt', `Song name: ${songs[i].name}\n`);
+                fs.appendFileSync('log.txt', `Preview url: ${songs[i].preview_url}\n`);
+                fs.appendFileSync('log.txt', `Album: ${songs[i].album.name}\n`);
+                fs.appendFileSync('log.txt', '\n');
+            }
+
         }
     )
 };
