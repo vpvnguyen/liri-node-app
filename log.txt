@@ -1,28 +1,55 @@
 
+-----YELP-----
+Name: Starbucks
+Is it closed?: false
+Rating: 3
+Price: $
+Location: 5365-B Alton Parkway
+Irvine
+92604
+CA
+
+
+-----OMDB-----
+Title: Mr. Nobody
+Year: 2009
+IMDB Rating: 7.8
+Rotten Tomatoes Rating: 67%
+Country: Belgium, Germany, Canada, France, USA, UK
+Language: English, Mohawk
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+
+
+-----SPOTIFY-----
 Artist's name: Lil Wayne
 Song name: Scared of the Dark (feat. XXXTENTACION)
 Preview url: null
 Album: Spider-Man: Into the Spider-Verse (Soundtrack From & Inspired by the Motion Picture)
 
 
+-----SPOTIFY-----
 Artist's name: Harry Styles
 Song name: Sign of the Times
 Preview url: https://p.scdn.co/mp3-preview/af237206f611b722f48620ece049aff3b8650e77?cid=9209e0a0522540c9909433d65d65ee8f
 Album: Harry Styles
 
 
+-----SPOTIFY-----
 Artist's name: Ace of Base
 Song name: The Sign
 Preview url: https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=9209e0a0522540c9909433d65d65ee8f
 Album: The Sign (US Album) [Remastered]
 
 
+-----SPOTIFY-----
 Artist's name: Ty Dolla $ign
 Song name: Or Nah (feat. The Weeknd, Wiz Khalifa & DJ Mustard) - Remix
 Preview url: https://p.scdn.co/mp3-preview/70f126c139847335bc03c756c55b80c99892268e?cid=9209e0a0522540c9909433d65d65ee8f
 Album: Or Nah (feat. The Weeknd, Wiz Khalifa and DJ Mustard) [Remix Version]
 
 
+-----SPOTIFY-----
 Artist's name: Dreamville
 Song name: Got Me (with Ari Lennox & Omen feat. Ty Dolla $ign & Dreezy)
 Preview url: null

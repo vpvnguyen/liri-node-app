@@ -39,7 +39,8 @@ function runOMDB(args) {
             console.log('\n');
 
             fs.appendFileSync('log.txt', `\n`);
-            fs.appendFileSync('log.txt', `Artist's name: ${response.data.Title}\n`);
+            fs.appendFileSync('log.txt', '-----OMDB-----\n');
+            fs.appendFileSync('log.txt', `Title: ${response.data.Title}\n`);
             fs.appendFileSync('log.txt', `Year: ${response.data.Year}\n`);
             fs.appendFileSync('log.txt', `IMDB Rating: ${response.data.imdbRating}\n`);
             fs.appendFileSync('log.txt', `Rotten Tomatoes Rating: ${response.data.Ratings[1].Value}\n`);
@@ -85,6 +86,7 @@ function runSpotify(args) {
                 console.log('\n');
 
                 fs.appendFileSync('log.txt', '\n');
+                fs.appendFileSync('log.txt', '-----SPOTIFY-----\n');
                 fs.appendFileSync('log.txt', `Artist's name: ${songs[i].artists[0].name}\n`);
                 fs.appendFileSync('log.txt', `Song name: ${songs[i].name}\n`);
                 fs.appendFileSync('log.txt', `Preview url: ${songs[i].preview_url}\n`);
@@ -113,6 +115,7 @@ function runYelp(args) {
             var firstResult = response.jsonBody.businesses[0];
             // var prettyJson = JSON.stringify(firstResult, null, 4);
             // console.log(prettyJson);
+
             console.log(`Name: ${firstResult.name}`);
             console.log(`Is it closed?: ${firstResult.is_closed}`);
             console.log(`Rating: ${firstResult.rating}`);
@@ -123,6 +126,17 @@ function runYelp(args) {
             console.log(`${firstResult.location.state}`);
             console.log('\n');
 
+            fs.appendFileSync('log.txt', '\n');
+            fs.appendFileSync('log.txt', '-----YELP-----\n');
+            fs.appendFileSync('log.txt', `Name: ${firstResult.name}\n`);
+            fs.appendFileSync('log.txt', `Is it closed?: ${firstResult.is_closed}\n`);
+            fs.appendFileSync('log.txt', `Rating: ${firstResult.rating}\n`);
+            fs.appendFileSync('log.txt', `Price: ${firstResult.price}\n`);
+            fs.appendFileSync('log.txt', `Location: ${firstResult.location.address1}\n`);
+            fs.appendFileSync('log.txt', `${firstResult.location.city}\n`);
+            fs.appendFileSync('log.txt', `${firstResult.location.zip_code}\n`);
+            fs.appendFileSync('log.txt', `${firstResult.location.state}\n`);
+            fs.appendFileSync('log.txt', '\n');
         }).catch(err => {
             console.log('Try: [node] [liri] [yelp] [name] [city]');
         });
