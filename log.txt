@@ -55,3 +55,141 @@ Song name: Got Me (with Ari Lennox & Omen feat. Ty Dolla $ign & Dreezy)
 Preview url: null
 Album: Revenge Of The Dreamers III
 
+
+-----OMDB-----
+Title: Mr. Nobody
+Year: 2009
+IMDB Rating: 7.8
+Rotten Tomatoes Rating: 67%
+Country: Belgium, Germany, Canada, France, USA, UK
+Language: English, Mohawk
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+
+
+-----OMDB-----
+Title: The Matrix
+Year: 1999
+IMDB Rating: 8.7
+Rotten Tomatoes Rating: 88%
+Country: USA
+Language: English
+Plot: A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.
+Actors: Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving
+
+
+-----SPOTIFY-----
+Artist's name: Lil Wayne
+Song name: Scared of the Dark (feat. XXXTENTACION)
+Preview url: null
+Album: Spider-Man: Into the Spider-Verse (Soundtrack From & Inspired by the Motion Picture)
+
+
+-----SPOTIFY-----
+Artist's name: Harry Styles
+Song name: Sign of the Times
+Preview url: https://p.scdn.co/mp3-preview/af237206f611b722f48620ece049aff3b8650e77?cid=9209e0a0522540c9909433d65d65ee8f
+Album: Harry Styles
+
+
+-----SPOTIFY-----
+Artist's name: Ace of Base
+Song name: The Sign
+Preview url: https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=9209e0a0522540c9909433d65d65ee8f
+Album: The Sign (US Album) [Remastered]
+
+
+-----SPOTIFY-----
+Artist's name: Ty Dolla $ign
+Song name: Or Nah (feat. The Weeknd, Wiz Khalifa & DJ Mustard) - Remix
+Preview url: https://p.scdn.co/mp3-preview/70f126c139847335bc03c756c55b80c99892268e?cid=9209e0a0522540c9909433d65d65ee8f
+Album: Or Nah (feat. The Weeknd, Wiz Khalifa and DJ Mustard) [Remix Version]
+
+
+-----SPOTIFY-----
+Artist's name: Dreamville
+Song name: Got Me (with Ari Lennox & Omen feat. Ty Dolla $ign & Dreezy)
+Preview url: null
+Album: Revenge Of The Dreamers III
+
+
+-----SPOTIFY-----
+Artist's name: ODESZA
+Song name: A Moment Apart
+Preview url: https://p.scdn.co/mp3-preview/b1e7ba9df703f098d879960c11eb6552024b152f?cid=9209e0a0522540c9909433d65d65ee8f
+Album: A Moment Apart
+
+
+-----SPOTIFY-----
+Artist's name: ODESZA
+Song name: Say My Name (feat. Zyra)
+Preview url: https://p.scdn.co/mp3-preview/855e3c8923f2ae2993716af7919d9aeca9511773?cid=9209e0a0522540c9909433d65d65ee8f
+Album: In Return
+
+
+-----SPOTIFY-----
+Artist's name: ODESZA
+Song name: Across The Room (feat. Leon Bridges)
+Preview url: https://p.scdn.co/mp3-preview/7eec114609ece35cf12f69c1bcce2e99aeb70ac8?cid=9209e0a0522540c9909433d65d65ee8f
+Album: A Moment Apart
+
+
+-----SPOTIFY-----
+Artist's name: ODESZA
+Song name: Sun Models (feat. Madelyn Grant)
+Preview url: https://p.scdn.co/mp3-preview/a066c40389df84ab6396acf16a31d23401923356?cid=9209e0a0522540c9909433d65d65ee8f
+Album: In Return
+
+
+-----SPOTIFY-----
+Artist's name: Hayden James
+Song name: Something About You - ODESZA Remix
+Preview url: null
+Album: Something About You (The Remixes)
+
+
+-----YELP-----
+Name: Starbucks
+Is it closed?: false
+Rating: 3
+Price: $
+Location: 5365-B Alton Parkway
+Irvine
+92604
+CA
+
+
+-----SPOTIFY-----
+Artist's name: Lil Wayne
+Song name: Scared of the Dark (feat. XXXTENTACION)
+Preview url: null
+Album: Spider-Man: Into the Spider-Verse (Soundtrack From & Inspired by the Motion Picture)
+
+
+-----SPOTIFY-----
+Artist's name: Harry Styles
+Song name: Sign of the Times
+Preview url: https://p.scdn.co/mp3-preview/af237206f611b722f48620ece049aff3b8650e77?cid=9209e0a0522540c9909433d65d65ee8f
+Album: Harry Styles
+
+
+-----SPOTIFY-----
+Artist's name: Ace of Base
+Song name: The Sign
+Preview url: https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=9209e0a0522540c9909433d65d65ee8f
+Album: The Sign (US Album) [Remastered]
+
+
+-----SPOTIFY-----
+Artist's name: Ty Dolla $ign
+Song name: Or Nah (feat. The Weeknd, Wiz Khalifa & DJ Mustard) - Remix
+Preview url: https://p.scdn.co/mp3-preview/70f126c139847335bc03c756c55b80c99892268e?cid=9209e0a0522540c9909433d65d65ee8f
+Album: Or Nah (feat. The Weeknd, Wiz Khalifa and DJ Mustard) [Remix Version]
+
+
+-----SPOTIFY-----
+Artist's name: Dreamville
+Song name: Got Me (with Ari Lennox & Omen feat. Ty Dolla $ign & Dreezy)
+Preview url: null
+Album: Revenge Of The Dreamers III
+

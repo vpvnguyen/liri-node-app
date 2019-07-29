@@ -1,3 +1,17 @@
-LIRI Bot
 
-https://drive.google.com/file/d/1EPN3MN3TfDQfnAETSMJbOVU5evAeZumf/view
+
+
+
+## LIRI Bot
+
+**Concept:**  All in one bot for getting information 
+
+**Technologies:**
+- Spotify API
+- Yelp API
+- OMDB API
+
+## Setup
+- npm install
+- provide API keys
+- [node] [liri.js] [spotify-this-song/movie-this/yelp] [search]
